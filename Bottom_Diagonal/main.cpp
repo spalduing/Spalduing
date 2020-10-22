@@ -6,13 +6,12 @@ int main()
 {
     int m_dimension, n_dimension = 0;
 
+    //ENTERING THE DIMENSION OF THE MATRIX//
     cout << "Enter the m dimension of the matrix: ";
     cin >> m_dimension;
 
     cout << "Enter the n dimension of the matrix: ";
     cin >> n_dimension;
-
-    int v[4] = {};
 
     int matrix[m_dimension][n_dimension];
 
@@ -42,7 +41,7 @@ int main()
 }
 
 
-/* Inferior diagonal of a matrix */
+/*REMANENTS OF THE OLD CODE*/
 void infDiag()
 {
 /*
