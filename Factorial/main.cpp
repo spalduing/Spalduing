@@ -15,22 +15,24 @@ int main()
 
 int factorial()
 {
-    int n;
+    int number;
     cout << "Enter a number to calculate its factorial: ";
-    cin >> n;
-    if(n == 0){
+    cin >> number;
+    if(number == 0){
         cout << "El factorial de n es: 1";
+        return 0;
     }else{
-    int f[n];
-    int r;
-    for(int i=n; i>0; i--){
-        f[i-1]=i;
+    int factorial_array[number];
+
+    int answer;
+    for(int i=number; i>0; i--){
+        factorial_array[i-1]=i;
     }
-    for(int j=n; j>1; j--){
-        r=n*f[j-2];
-        n=r;
+    for(int j=number; j>1; j--){
+        answer=number*factorial_array[j-2];
+        number=answer;
     }
-    cout << "El factorial de n es: "<< r << endl;
+    cout << "El factorial de n es: "<< answer << endl;
     }
     return 0;
 }
@@ -40,15 +42,20 @@ Calculate the factorial of a number in a more efficient way
 */
 int factorial2()
 {
-    int n,f;
+    int number,factorial;
+
     cout << "Enter a number: ";
-    cin >> n;
-    f=1;
-    for(int i=n; i>= 1; --i){
-        f *= i;
-        cout << f<<"\n";
+    cin >> number;
+
+    factorial=1;
+
+    for(int i=number; i>= 1; --i){
+        factorial *= i;
+        cout << "Current factorial: " << i << " = " << factorial <<"\n";
     }
-    cout << n << "! equals to: "<< f <<endl;
-    f = 1;
+
+    cout << number << "! equals to: "<< factorial <<endl;
+    factorial = 1;
+
     return 0;
 }
