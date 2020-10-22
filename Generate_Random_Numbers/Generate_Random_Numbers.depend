@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1603400452 source:c:\users\usuario\desktop\spalduing\generate_random_numbers\main.cpp
+	<iostream>
+	<vector>
+	<ctime>
+
