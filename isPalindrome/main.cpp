@@ -8,8 +8,9 @@ using namespace std;
 
 bool isEven(int n);
 void dispChar(vector<char> &v );
-bool isPalindrome2(string w);
-bool isPalindrome(string p);
+bool isPalindrome(string word);
+bool isPalindrome2(string word);
+
 
 
 int main()
@@ -23,19 +24,21 @@ int main()
     return 0;
 }
 
+//WHAT A SURPRICE, my code is actually faster than the//
+/////////////easier form of implement this//////////////
 /* Return true if a word is a palidrome word*/
-bool isPalindrome(string p)
+bool isPalindrome(string word)
 {
     vector<char> v1;
     vector<char> v2;
-    double psize;
+    double psize = 0;
 
-    if(!isEven(p.size())){
+    if(!isEven(word.size())){
 
-        for(int i=0;i<p.size();i++)
+        for(int i=0;i<word.size();i++)
         psize++;
-        string s1=p.substr(0,ceil(psize/2)-1);
-        string s2=p.substr(ceil(psize/2),p.size());
+        string s1=word.substr(0,ceil(psize/2)-1);
+        string s2=word.substr(ceil(psize/2),word.size());
 
         for(int j=0; j<s1.size();j++){
             v1.push_back(s1[j]);
@@ -49,8 +52,8 @@ bool isPalindrome(string p)
         dispChar(v2);
         return (v1==v2);
     }else{
-        string s1=p.substr(0,p.size()/2);
-        string s2=p.substr(p.size()/2,p.size());
+        string s1=word.substr(0,word.size()/2);
+        string s2=word.substr(word.size()/2,word.size());
         for(int k=0; k<s1.size();k++){
             v1.push_back(s1[k]);
             v2.push_back(s2[k]);
@@ -66,18 +69,18 @@ bool isPalindrome(string p)
 
 }
 
-bool isPalindrome2(string w)
+bool isPalindrome2(string word)
 {
-    vector<char> v1,v2;
-    for(int i=0;i<w.size();i++){
-        v1.push_back(w[i]);
-        v2.push_back(w[i]);
+    vector<char> vector1, vector2;
+    for(int i=0;i<word.size();i++){
+        vector1.push_back(word[i]);
+        vector2.push_back(word[i]);
     }
-    reverse(v2.begin(),v2.end());
-    dispChar(v1);
+    reverse(vector2.begin(),vector2.end());
+    dispChar(vector1);
     cout<<"\t";
-    dispChar(v2);
-    return (v1==v2);
+    dispChar(vector2);
+    return (vector1 == vector2);
 }
 
 void dispChar(vector<char> &v )

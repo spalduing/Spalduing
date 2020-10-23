@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1603493707 source:c:\users\usuario\desktop\spalduing\ispalindrome\main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+	<string>
+	<algorithm>
+
