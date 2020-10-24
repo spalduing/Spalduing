@@ -10,7 +10,10 @@ int main()
     vector<int> vect = {1,1,1};
 
     vector<int> answ = tribonacci(vect, 8);
-    int s = sizeof(answ)/sizeof(int);
+    int s_answ = sizeof(answ)/sizeof(int);
+
+    cout << "s_answ: " << s_answ << endl;
+    cout << "answ.size(): " << answ.size() << endl;
 
     for(int i=0; i<answ.size(); i++)
     {
