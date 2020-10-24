@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1603552804 source:c:\users\usuario\desktop\spalduing\x_o\main.cpp
+	<iostream>
+	<ctype.h>
+	<stdio.h>
+	<string>
+
