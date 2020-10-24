@@ -10,7 +10,8 @@ int movement(char current_step);
 int main()
 {
     std::vector<char> steps_sequence =
-    {'w','e','n','s','w','e','n','s','n','e'};
+    {'w','e','n','s','w','e','n','s','n','s'};
+
     if(isValidWalk_5(steps_sequence))
     {
         std::cout << "The walk is valid!" << std::endl;
