@@ -7,12 +7,12 @@ std::vector<int> tribonacci(std::vector<int> signature, int n);
 
 int main()
 {
-    vector<int> vect = {1,2,3};
+    vector<int> vect = {1,1,1};
 
-    vector<int> answ = tribonacci(vect, 4);
+    vector<int> answ = tribonacci(vect, 8);
     int s = sizeof(answ)/sizeof(int);
 
-    for(int i=0; i<s; i++)
+    for(int i=0; i<answ.size(); i++)
     {
         cout << answ[i] << " " << flush;
     }
@@ -25,10 +25,14 @@ int main()
 *   such tat each number is the som of the two preciding ones,
 *   starting from 0 and 1.
 *
-*   In our  tribonacci method that returns a vector wiht
-*   the first n elements-signature included of the so seeded
-*   sequence such that each number is the sum of the tree
-*   preceding ones, starting from a seed of three numbers.
+*   Our tribonacci sequence instead, every new number is the
+*   result of the sum of the three previus numbers of a given
+*   signature.
+*
+*   Our method returns a vector wiht the first n tribonacci
+*   elements (signature included) of the so seeded sequence
+*   such that each number is the sum of the tree preceding
+*   ones,starting from a seed of three numbers.
 *
 *
 */
