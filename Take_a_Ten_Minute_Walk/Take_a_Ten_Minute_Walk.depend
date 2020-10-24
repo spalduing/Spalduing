@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1603561963 source:c:\users\usuario\desktop\spalduing\take_a_ten_minute_walk\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<bits/stdc++.h>
+
