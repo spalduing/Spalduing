@@ -17,6 +17,7 @@ int main()
 
 int solution(int number)
 {
+    if(number < 0){return 0;}
     int c,sum_multiples = 0;
     c = 1;
     //std::cout << c << std::endl;
