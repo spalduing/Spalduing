@@ -57,4 +57,4 @@ bool bracketMatch(Stack<char> &pile, string sentence )
             }
         }
         return pile.getSize() == 0;
-    }
+}
