@@ -1,3 +1,3 @@
 #
 # Spalduing
-This is a basic repository of all my inicial excersices on c++
+This repository contains exercises and data structures that I made in C++.
